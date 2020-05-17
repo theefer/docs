@@ -184,16 +184,16 @@ const astronautSchema = {
        minimum: 0,
      },
    },
- }
- ```
+}
+```
 
- Using that schema, we'll create a new collection. See [our ThreadDB introduction](https://docs.textile.io/threads/introduction/) for details about Collections, Schemas, and Instances.
+Using that schema, we'll create a new collection. See [our ThreadDB introduction](https://docs.textile.io/threads/introduction/) for details about Collections, Schemas, and Instances.
 
- ```typescript
- await db.newCollection(id, 'Astronaut', astronautSchema)
- ```
+```typescript
+await db.newCollection(id, 'Astronaut', astronautSchema)
+```
 
- ### Add Instance to Collection
+### Add Instance to Collection
 
 Now that our ThreadDB contains the Astronaut Collection, you just need to add a new astronaut that matches the expected schema. If you run the following code many times, you'll notice many Buzz Aldrin entries in your ThreadDB, each with a unique ID.
 
